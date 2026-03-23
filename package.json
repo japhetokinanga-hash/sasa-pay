@@ -1,0 +1,26 @@
+# Server
+PORT=3000
+NODE_ENV=development
+
+# Safaricom Daraja API
+MPESA_CONSUMER_KEY=your_consumer_key_here
+MPESA_CONSUMER_SECRET=your_consumer_secret_here
+MPESA_PASSKEY=your_lipa_na_mpesa_passkey_here
+MPESA_PAYBILL=174379
+MPESA_SHORTCODE=174379
+MPESA_ENV=sandbox
+
+# Callback URLs (must be public HTTPS — use ngrok for testing)
+MPESA_CALLBACK_URL=https://yourdomain.com/mpesa/callback
+MPESA_TIMEOUT_URL=https://yourdomain.com/mpesa/timeout
+
+# Admin
+ADMIN_SECRET=change_this_to_a_strong_secret
+
+# Africa's Talking (USSD)
+AT_API_KEY=your_africastalking_api_key
+AT_USERNAME=sandbox
+AT_USSD_CODE=*384*XX#
+
+# Database (SQLite for simplicity — swap for PostgreSQL in production)
+DB_PATH=./sasapay.db
